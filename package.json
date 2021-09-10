@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "logform": "^2.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-draggable": "^4.4.3",
@@ -16,7 +17,11 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-voice-recorder": "^2.1.0",
-    "web-vitals": "^1.1.2"
+    "rollbar": "^2.24.0",
+    "web-vitals": "^1.1.2",
+    "winston": "^3.3.3",
+    "winston-react": "^1.0.0-RC.0",
+    "winston-transport": "^4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
