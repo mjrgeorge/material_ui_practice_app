@@ -10,7 +10,7 @@ import AudioRecorder from './components/audioRecorder/AudioRecorder';
 import Home from './components/Home';
 import PageAudioRecorder from './components/myAudioRecorder/PageAudioRecorder';
 import './style.css';
-import { Provider, ErrorBoundary } from '@rollbar/react'; // <-- Provider imports 'rollbar' for us
+import { Provider } from '@rollbar/react';
 
 function App() {
   const rollbarConfig = {
