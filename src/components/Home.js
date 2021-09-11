@@ -23,7 +23,7 @@ const Home = () => {
         var monthName = getMonthName(myMonth);
     } catch (e) {
         monthName = 'unknown';
-        console.error(e.message, e.name); // pass exception object to err handler
+        console.error(e.message, e.name, monthName); // pass exception object to err handler
     }
 
     return (
