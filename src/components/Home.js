@@ -1,9 +1,12 @@
 import React from 'react';
+import { Box, Typography } from '@material-ui/core';
 
 const Home = () => {
 
     return (
-        <h1>Home page!</h1>
+        <Box m={5}>
+            <Typography variant="h3" color="secondary" align="center">This is a Home Page!</Typography>
+        </Box>
     )
 }
 
