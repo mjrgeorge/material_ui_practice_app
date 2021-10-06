@@ -3,34 +3,21 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from "react-router-dom";
-import { Button, ButtonGroup } from "@material-ui/core";
 import AudioRecorder from './components/audioRecorder/AudioRecorder';
 import Home from './components/Home';
 import PageAudioRecorder from './components/myAudioRecorder/PageAudioRecorder';
 import MyTextEditor from './components/myTextEditor/MyTextEditor';
+import Header from './components/Header';
 import './style.css';
+import Container from '@mui/material/Container';
 
 function App() {
 
   return (
-    <Router>
-      <div>
-        <ButtonGroup color="primary" >
-          <Button>
-            <Link to="/" style={{ textDecoration: 'none' }}>Home</Link>
-          </Button>
-          <Button>
-            <Link to="/textEditor" style={{ textDecoration: 'none' }}>Text Editor</Link>
-          </Button>
-          <Button>
-            <Link to="/audioRecorder" style={{ textDecoration: 'none' }}>Audio Recorder</Link>
-          </Button>
-          <Button>
-            <Link to="/pageAudioRecorder" style={{ textDecoration: 'none' }}>Page Audio Recorder</Link>
-          </Button>
-        </ButtonGroup>
+    <Container maxWidth="md">
+      <Router>
+        <Header />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -45,8 +32,8 @@ function App() {
             <MyTextEditor />
           </Route>
         </Switch>
-      </div>
-    </Router>
+      </Router>
+    </Container>
   );
 }
 
