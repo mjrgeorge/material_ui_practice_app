@@ -1,6 +1,6 @@
 import { MenuItem, Select } from '@material-ui/core';
 import React, { useContext } from 'react';
-import { CustomFontThemeContext } from '../../themesColor/CustomColorThemeProvider';
+import { CustomFontThemeContext } from '../../themes/CustomThemeProvider';
 
 const FontThemeButton = () => {
     const { currentFontTheme, setFontTheme } = useContext(CustomFontThemeContext);

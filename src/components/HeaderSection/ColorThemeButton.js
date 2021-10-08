@@ -1,6 +1,6 @@
 import { MenuItem, Select } from '@material-ui/core';
 import React, { useContext } from 'react';
-import { CustomColorThemeContext } from '../../themesColor/CustomColorThemeProvider';
+import { CustomColorThemeContext } from '../../themes/CustomThemeProvider';
 
 const ColorThemeButton = () => {
     const { currentColorTheme, setColorTheme } = useContext(CustomColorThemeContext);
