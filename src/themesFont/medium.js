@@ -1,6 +1,5 @@
-import { createMuiTheme } from '@material-ui/core/styles';
-const theme = createMuiTheme({
+const medium = {
 
-});
+};
 
-export default theme;
+export default medium;

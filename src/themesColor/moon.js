@@ -1,6 +1,4 @@
-import { createMuiTheme } from '@material-ui/core/styles';
-// A custom theme for this app
-const theme = createMuiTheme({
+const moon = {
     palette: {
         type: 'light',
         primary: {
@@ -35,6 +33,6 @@ const theme = createMuiTheme({
         },
         divider: 'rgba(24,23,23,0.12)',
     },
-});
+};
 
-export default theme;
+export default moon;

@@ -1,5 +1,4 @@
-import { createMuiTheme } from '@material-ui/core/styles';
-const theme = createMuiTheme({
+const small = {
     typography: {
         fontSize: 12,
         h1: {
@@ -42,6 +41,6 @@ const theme = createMuiTheme({
             fontSize: '0.5rem',
         },
     },
-});
+};
 
-export default theme;
+export default small;
