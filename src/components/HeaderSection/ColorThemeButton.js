@@ -1,11 +1,11 @@
 import { MenuItem, Select } from '@material-ui/core';
 import React, { useContext } from 'react';
-import { CustomColorThemeContext } from '../../themes/CustomThemeProvider';
+import { CustomColorThemeContext } from '../../themesColor/CustomColorThemeProvider';
 
-const MultipleTheme = () => {
+const ColorThemeButton = () => {
     const { currentColorTheme, setColorTheme } = useContext(CustomColorThemeContext);
 
-    const handleThemeChange = (event) => {
+    const handleColorThemeChange = (event) => {
         setColorTheme(event.target.value);
     };
 
@@ -13,7 +13,7 @@ const MultipleTheme = () => {
         <>
             <Select
                 value={currentColorTheme}
-                onChange={handleThemeChange}
+                onChange={handleColorThemeChange}
                 autoWidth
                 disableUnderline
             >
@@ -25,4 +25,4 @@ const MultipleTheme = () => {
     );
 };
 
-export default MultipleTheme;
+export default ColorThemeButton;

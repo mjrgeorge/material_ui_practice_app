@@ -8,6 +8,6 @@ const themes = {
     moon,
 };
 
-export default function getTheme(theme) {
+export default function getColorTheme(theme) {
     return themes[theme];
 }

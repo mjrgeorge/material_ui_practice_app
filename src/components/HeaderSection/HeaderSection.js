@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Button, ButtonGroup } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import FontSize from './FontSize';
-import MultipleTheme from './MultipleTheme';
+import FontThemeButton from './FontThemeButton';
+import ColorThemeButton from './ColorThemeButton';
 
 const HeaderSection = () => {
 
@@ -26,10 +26,10 @@ const HeaderSection = () => {
             <br />
             <ButtonGroup color="secondary" >
                 <Button>
-                    <FontSize />
+                    <FontThemeButton />
                 </Button>
                 <Button>
-                    <MultipleTheme />
+                    <ColorThemeButton />
                 </Button>
             </ButtonGroup>
         </>
