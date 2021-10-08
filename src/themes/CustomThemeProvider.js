@@ -1,8 +1,8 @@
 import { ThemeProvider } from "@material-ui/core";
 import { createMuiTheme } from "@material-ui/core/styles";
 import React, { useState, createContext } from 'react';
-import getFontTheme from '../themesFont/base';
-import getColorTheme from './base';
+import getFontTheme from './themesFont/base';
+import getColorTheme from './themesColor/base';
 
 export const CustomColorThemeContext = createContext({
     currentColorTheme: 'light',
