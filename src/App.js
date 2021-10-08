@@ -8,7 +8,7 @@ import AudioRecorder from './components/audioRecorder/AudioRecorder';
 import Home from './components/Home';
 import PageAudioRecorder from './components/myAudioRecorder/PageAudioRecorder';
 import MyTextEditor from './components/myTextEditor/MyTextEditor';
-import Header from './components/Header';
+import HeaderSection from './components/HeaderSection/HeaderSection';
 import './style.css';
 import Container from '@mui/material/Container';
 
@@ -17,7 +17,7 @@ function App() {
   return (
     <Container maxWidth="md">
       <Router>
-        <Header />
+        <HeaderSection />
         <Switch>
           <Route exact path="/">
             <Home />

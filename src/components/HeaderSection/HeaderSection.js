@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { Button, ButtonGroup } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import FontSize from './FontSize';
+import MultipleTheme from './MultipleTheme';
 
-const Header = () => {
+const HeaderSection = () => {
 
     return (
         <>
@@ -20,8 +22,18 @@ const Header = () => {
                     <Link to="/pageAudioRecorder" style={{ textDecoration: 'none' }}>Page Audio Recorder</Link>
                 </Button>
             </ButtonGroup>
+            <br />
+            <br />
+            <ButtonGroup color="secondary" >
+                <Button>
+                    <FontSize />
+                </Button>
+                <Button>
+                    <MultipleTheme />
+                </Button>
+            </ButtonGroup>
         </>
     )
 }
 
-export default Header
+export default HeaderSection
