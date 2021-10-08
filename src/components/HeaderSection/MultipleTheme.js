@@ -1,18 +1,18 @@
 import { MenuItem, Select } from '@material-ui/core';
 import React, { useContext } from 'react';
-import { CustomThemeContext } from '../../themes/CustomThemeProvider';
+import { CustomColorThemeContext } from '../../themes/CustomThemeProvider';
 
 const MultipleTheme = () => {
-    const { currentTheme, setTheme } = useContext(CustomThemeContext);
+    const { currentColorTheme, setColorTheme } = useContext(CustomColorThemeContext);
 
     const handleThemeChange = (event) => {
-        setTheme(event.target.value);
+        setColorTheme(event.target.value);
     };
 
     return (
         <>
             <Select
-                value={currentTheme}
+                value={currentColorTheme}
                 onChange={handleThemeChange}
                 autoWidth
                 disableUnderline

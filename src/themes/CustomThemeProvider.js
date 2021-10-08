@@ -1,35 +1,35 @@
 import { ThemeProvider } from '@material-ui/core/styles';
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 import getTheme from './base';
 
-export const CustomThemeContext = React.createContext({
-    currentTheme: 'light',
-    setTheme: null,
+export const CustomColorThemeContext = createContext({
+    currentColorTheme: 'light',
+    setColorTheme: null,
 });
 
 const CustomThemeProvider = (props) => {
     const { children } = props;
 
-    const currentTheme = localStorage.getItem('appTheme') || 'light';
+    const currentColorTheme = localStorage.getItem('appTheme') || 'light';
 
-    const [themeName, _setThemeName] = useState(currentTheme);
+    const [colorThemeName, setColorThemeName] = useState(currentColorTheme);
 
-    const theme = getTheme(themeName);
+    const theme = getTheme(colorThemeName);
 
-    const setThemeName = (name) => {
+    const setColorTheme = (name) => {
         localStorage.setItem('appTheme', name);
-        _setThemeName(name);
+        setColorThemeName(name);
     };
 
     const contextValue = {
-        currentTheme: themeName,
-        setTheme: setThemeName,
+        currentColorTheme: colorThemeName,
+        setColorTheme: setColorTheme,
     };
 
     return (
-        <CustomThemeContext.Provider value={contextValue}>
+        <CustomColorThemeContext.Provider value={contextValue}>
             <ThemeProvider theme={theme}>{children}</ThemeProvider>
-        </CustomThemeContext.Provider>
+        </CustomColorThemeContext.Provider>
     );
 };
 
