@@ -1,0 +1,8 @@
+{
+  "app_title": "Title",
+  "language": "Language",
+  "welcome_message": "Welcome",
+  "days_since_release": "it's been {{number_of_days}} days since this story was released.",
+  "home_page": "This is a Home Page!",
+  "home_page_story": "In the batch era, computing power was extremely scarce and expensive. User interfaces were rudimentary. Users had to accommodate computers rather than the other way around; user interfaces were considered overhead, and software was designed to keep the processor at maximum utilization with as little overhead as possible. The input side of the user interfaces for batch machines was mainly punched cards or equivalent media like paper tape. The output side added line printers to these media. With the limited exception of the system operator's console, human beings did not interact with batch machines in real time at all. Submitting a job to a batch machine involved, first, preparing a deck of punched cards describing a program and a dataset. Punching the program cards wasn't done on the computer itself, but on keypunches, specialized typewriter-like machines that were notoriously bulky, unforgiving, and prone to mechanical failure. The software interface was similarly unforgiving, with very strict syntaxes meant to be parsed by the smallest possible compilers and interpreters"
+}
