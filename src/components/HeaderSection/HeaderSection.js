@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
@@ -8,10 +7,6 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import i18next from 'i18next';
 import cookies from 'js-cookie';
-import { Button, ButtonGroup } from "@material-ui/core";
-import { Link } from "react-router-dom";
-import FontThemeButton from './FontThemeButton';
-import ColorThemeButton from './ColorThemeButton';
 
 const languages = [
     {
