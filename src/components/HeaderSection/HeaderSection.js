@@ -7,6 +7,8 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import i18next from 'i18next';
 import cookies from 'js-cookie';
+import { Button, ButtonGroup } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const languages = [
     {
@@ -45,7 +47,7 @@ const HeaderSection = () => {
 
     return (
         <div>
-            {/* <ButtonGroup color="primary" >
+            <ButtonGroup color="primary" >
                 <Button>
                     <Link to="/" style={{ textDecoration: 'none' }}>Home</Link>
                 </Button>
@@ -59,14 +61,6 @@ const HeaderSection = () => {
                     <Link to="/pageAudioRecorder" style={{ textDecoration: 'none' }}>Page Audio Recorder</Link>
                 </Button>
             </ButtonGroup>
-            <ButtonGroup color="secondary" >
-                <Button>
-                    <FontThemeButton />
-                </Button>
-                <Button>
-                    <ColorThemeButton />
-                </Button>
-            </ButtonGroup> */}
             <Box sx={{ width: 120, m: 3 }}>
                 <FormControl fullWidth>
                     <InputLabel id="demo-simple-select-label">{t('language')}</InputLabel>
