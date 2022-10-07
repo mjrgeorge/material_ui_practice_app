@@ -41,7 +41,9 @@ const Home = () => {
 
     return (
         <main>
-            <Search />
+            <Box>
+                <Search />
+            </Box>
             <Box m={3}>
                 <Typography variant="h2" color="primary" align="center" gutterBottom>{t('welcome_message')}</Typography>
                 <Typography variant="h3" color="secondary" align="center" gutterBottom>{t('home_page')}</Typography>
